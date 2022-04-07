@@ -1,0 +1,35 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+
+	// x, width (é a largorua, horizontal da tela)
+	// y, height (é a altura, vertical da tela)
+	// Para criar a tela, vamos usar o <canvas> mas pode ser outra.
+
+	function desenhaQuadradoVerde() {
+
+	// puxa o canva do HTML para dentro do Java, sempre com document.querySelector('');
+	var tela = document.querySelector('canvas');
+
+	// define o contexto do pincel, 2d nesse caso. .getContext('');
+	var pincel = tela.getContext('2d');
+
+	pincel.fillStyle = 'green';
+	pincel.fillRect(0, 0, 50, 50);
+	pincel.fillStroke = 'black';	// .filStroke define cor borda
+	pincel.strokeRect(0, 0, 50, 50);// .strokeRect define a borda
+	
+
+	pincel.fillRect(50, 0, 50, 50);
+	pincel.fillStroke = 'black';	// .filStroke define cor borda
+	pincel.strokeRect(50, 0, 50, 50);// .strokeRect define a borda
+
+	pincel.fillRect(100, 0, 50, 50);
+	pincel.fillStroke = 'black';	// .filStroke define cor borda
+	pincel.strokeRect(100, 0, 50, 50);// .strokeRect define a borda
+
+	}
+
+desenhaQuadradoVerde();
+
+</script>

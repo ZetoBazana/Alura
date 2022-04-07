@@ -1,0 +1,36 @@
+<canvas width="600" height="400"> </canvas>
+
+
+<script>
+
+// x, width (é a largorua, horizontal da tela)
+// y, height (é a altura, vertical da tela)
+// Para criar a tela, vamos usar o <canvas> mas pode ser outra.
+
+// puxa o canva do HTML para dentro do Java, sempre com document.querySelector('');
+var tela = document.querySelector('canvas');
+
+// define o contexto do pincel, 2d nesse caso. .getContext('');
+var pincel = tela.getContext('2d');
+
+
+// Define a cor do pincel(variavel) com .fillStyle = '';
+pincel.fillStyle = 'black'
+
+// Cria a aplicação inicial, com .beginPath();
+pincel.beginPath();
+
+// Defino o ponto com o .moveTo(x, y);
+pincel.moveTo(50, 50);
+
+// primeiro ponto ao segundo, usando .lineTo(x, y);
+pincel.lineTo(50, 400);
+
+// segundo ponto para o terceiro, continua no .lineTo(x, y);
+pincel.lineTo(400, 400);
+
+// Agora vai informar que chegou ao final deste caminho, com .fill();
+pincel.fill();
+
+
+</script>

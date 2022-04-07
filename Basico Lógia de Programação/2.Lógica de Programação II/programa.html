@@ -1,0 +1,24 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+	
+	function calculadoraAdicaoSubtracao(numero, outroNumero, operacao) {
+    if operacao == "+" {
+        operacao = +;
+    }
+    if operacao == "-" {
+        operacao = -;
+    } else {
+        return(0);
+    }
+    
+    document.write(numero);
+    document.write(outroNumero);
+    document.write(operacao)
+    
+    var resultado = (numero + operacao + outroNumero);
+    return(resultado);
+ 	}
+    calculadoraAdicaoSubtracao(1, 2, "+");
+
+</script>
